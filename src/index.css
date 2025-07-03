@@ -7,3 +7,8 @@
 body{
   background-color: #111;
 }
+
+#tasklist::-webkit-scrollbar{
+  display: none;
+
+}

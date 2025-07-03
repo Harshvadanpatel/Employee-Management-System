@@ -1,5 +1,8 @@
 import React from 'react'
 import Header from '../other/Header.jsx'
+import TaskListNumbers from '../other/TaskListNumbers.jsx'
+import TaskList from '../TaskList/TaskList.jsx'
+
 
 function EmployeeDashboard() {
   return (
@@ -7,6 +10,9 @@ function EmployeeDashboard() {
       
 
       <Header/>
+      <TaskListNumbers/>
+      <TaskList/>
+
     </div>
   )
 }
