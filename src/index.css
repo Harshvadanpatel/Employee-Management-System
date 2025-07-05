@@ -12,3 +12,23 @@ body{
   display: none;
 
 }
+
+
+/* File: ems\src\components\other\AllTask.jsx */
+.text-blue-600 {
+    color: #2563eb; /* Tailwind blue-600 */
+}
+
+.text-yellow-400 {
+    color: #facc15; /* Tailwind yellow-400 */
+}
+
+.text-green-600 {
+    color: #16a34a; /* Tailwind green-600 */
+}
+
+.text-red-600 {
+    color: #dc2626; /* Tailwind red-600 */
+}
+
+

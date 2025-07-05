@@ -4,14 +4,14 @@ import TaskListNumbers from '../other/TaskListNumbers.jsx'
 import TaskList from '../TaskList/TaskList.jsx'
 
 
-function EmployeeDashboard({data}) {
+function EmployeeDashboard(props) {
   return (
     <div className='p-10 bg-[#1C1C1C] h-screen'>
       
 
-      <Header data={data} />
-      <TaskListNumbers data={data}/>
-      <TaskList data={data}/>
+      <Header changeUser= {props.changeUser} data={props.data} />
+      <TaskListNumbers data={props.data}/>
+      <TaskList data={props.data}/>
 
     </div>
   )
