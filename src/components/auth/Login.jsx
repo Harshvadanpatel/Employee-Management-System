@@ -10,6 +10,7 @@ function Login({handleLogin}) {
   const submitHandler = (e)=>{
     // Handle form submission logic here
     e.preventDefault();
+    // Call the handleLogin function passed as a prop with email and password
     handleLogin(email, password);
     console.log("Email :", email);
     console.log("Password :", password);
@@ -23,7 +24,7 @@ function Login({handleLogin}) {
 
 
   return (
-    <div className='flex h-screen w-screen items-center justify-center'>
+    <div className='flex h-screen  w-screen items-center justify-center'>
         <div className='border-2 border-emerald-600 p-20 rounded-xl'>
             <form 
             onSubmit={(e)=>{
