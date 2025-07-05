@@ -20,7 +20,7 @@ const TaskList = ({data}) => {
         if(elem.failed){
           return <FailedTask key={idx} data ={elem}/>
         }
-        if(elem.new){
+        if(elem.newTask){
           return <NewTask key={idx} data ={elem}/>
         }
 

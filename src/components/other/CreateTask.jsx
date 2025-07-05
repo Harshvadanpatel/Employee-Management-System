@@ -18,8 +18,8 @@ const CreateTask = () => {
          e.preventDefault()
           setNewTask({taskTitle,taskDescription,taskDate,category,active:false,newTask:true,failed:false,completed:false})
           
-          const data=userData.employees
-          console.log(data)
+          const data=userData
+
 
           data.forEach(function(elem){
             if(assingnTo == elem.firstName){
@@ -28,17 +28,19 @@ const CreateTask = () => {
                  
             }
           })
+          setUser(data)
+            console.log(data)
 
         
 
-          localStorage.setItem('employees',JSON.stringify(data))
+           localStorage.setItem('employees',JSON.stringify(data))
  
 
         //   setTaskTitle('')
         //   setTaskDescription('')
         //     setTaskDate('')
         //     setAssingnTo('')
-        //     setCategory('')
+        //    setCategory('')
 
         
 
