@@ -33,17 +33,13 @@ function Login({handleLogin}) {
             }}
              className='flex flex-col items-center justify-center'>
                 <input
-                value = {email}
-                onChange={(e)=>{
-                  setEmail(e.target.value);
-                }}
-                required className=' font-medium border-2 outline-none  py-2 px-6 text-xl border-emerald-600 rounded-full' type="email" placeholder='Enter your email'/>
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required autoComplete="email" className='font-medium border-2 outline-none py-2 px-6 text-xl border-emerald-600 rounded-full' type="email" placeholder='Enter your email'/>
                 <input
-                value = {password}
-                onChange={(e)=>{
-                  setPassword(e.target.value);
-                }}
-                required className='font-medium border-2 outline-none  py-2 px-6 text-xl mt-3 border-emerald-600 rounded-full' type="password" placeholder='Enter password'/>
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required autoComplete="current-password" className='font-medium border-2 outline-none py-2 px-6 text-xl mt-3 border-emerald-600 rounded-full' type="password" placeholder='Enter password'/>
                 <button className=' border-none outline-none  py-2 px-8 w-full text-lg mt-7 hover:bg-emerald-700 rounded-full font-semibold bg-emerald-600'>Log in</button>
             </form>
         </div>
